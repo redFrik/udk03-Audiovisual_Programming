@@ -19,7 +19,7 @@ dates
 - [x] 28may: [`100528`](https://github.com/redFrik/udk03-Audiovisual_Programming/blob/master/100528) More about playing samples with SuperCollider. Advanced examples segmentation, cutups etc.
 - [x] 03jun: [`100603`](https://github.com/redFrik/udk03-Audiovisual_Programming/blob/master/100603) Granular synthesis with SuperCollider. Including GUI control.
 - [x] 04jun: [`100604`](https://github.com/redFrik/udk03-Audiovisual_Programming/blob/master/100604) More about granular synthesis with SuperCollider. Advanced examples.
-- [x] 24jun: ['100624'](http://www.fredrikolofsson.com/f0blog/?q=node/161) (external link) Arduino and 1bit music.
+- [x] 24jun: [`100624`](http://www.fredrikolofsson.com/f0blog/?q=node/161) (external link) Arduino and 1bit music.
 - [x] 25jun: [`100625`](https://github.com/redFrik/udk03-Audiovisual_Programming/blob/master/100625) Connecting Arduino and SuperCollider with firmata and the SCPyduino quark.
 - [x] 08jul: own projects
 - [x] 09jul: own projects

@@ -1,0 +1,30 @@
+#N canvas 620 27 563 505 10;
+#X obj 70 44 adc~;
+#X obj 50 363 dac~;
+#X obj 228 200 cycle~ 500;
+#X obj 191 283 *~;
+#X floatatom 230 142 5 0 0 0 - - -;
+#X obj 47 161 delay~ 50 50;
+#X text 142 390 role 1 - let sound pass through and add our own sounds.
+;
+#X text 142 407 role 2 - block and manipulate incomming sounds. gate
+and only let through when you want to.;
+#X text 142 437 role 3 - affect and change the sound with ringmod.
+;
+#X obj 244 33 key;
+#X floatatom 242 75 5 0 0 0 - - -;
+#X obj 243 54 split 97 122;
+#X floatatom 297 77 5 0 0 0 - - -;
+#X obj 237 105 maxlib/scale 97 122 80 9000;
+#X connect 0 0 5 0;
+#X connect 0 1 5 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 3 0 1 1;
+#X connect 4 0 2 0;
+#X connect 5 0 3 1;
+#X connect 9 0 11 0;
+#X connect 10 0 13 0;
+#X connect 11 0 10 0;
+#X connect 11 1 12 0;
+#X connect 13 0 4 0;

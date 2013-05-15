@@ -1,0 +1,53 @@
+#N canvas 653 224 588 528 10;
+#X msg 125 71 connect 127.0.0.1 57120;
+#X msg 217 125 send test 4 4 4;
+#X obj 137 110 sendOSC;
+#X msg 227 135 send ar 4 4 4;
+#X obj 40 170 dumpOSC 7070;
+#X obj 188 248 print;
+#X obj 87 204 route five six;
+#X floatatom 89 251 5 0 0 0 - - -;
+#X floatatom 130 236 5 0 0 0 - - -;
+#X msg 136 40 connect 192.168.1.50;
+#X obj 359 235 line~;
+#X obj 282 282 dac~;
+#X obj 287 249 *~;
+#X obj 285 204 cycle~ 500;
+#X msg 370 209 0.5 \, 0 500;
+#X obj 387 134 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 68 355 counter 4;
+#X obj 73 316 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 69 382 5 0 0 0 - - -;
+#X obj 66 408 sel 0 1 2 3 4;
+#X obj 61 436 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 81 435 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 102 436 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 122 435 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 141 434 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 2 0;
+#X connect 1 0 2 0;
+#X connect 3 0 2 0;
+#X connect 4 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 1 8 0;
+#X connect 6 2 5 0;
+#X connect 9 0 2 0;
+#X connect 10 0 12 1;
+#X connect 12 0 11 0;
+#X connect 12 0 11 1;
+#X connect 13 0 12 0;
+#X connect 14 0 10 0;
+#X connect 15 0 14 0;
+#X connect 15 0 3 0;
+#X connect 16 0 18 0;
+#X connect 17 0 16 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 19 1 21 0;

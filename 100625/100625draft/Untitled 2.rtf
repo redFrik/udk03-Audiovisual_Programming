@@ -1,0 +1,100 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue191;\red0\green115\blue0;\red191\green0\blue0;
+\red96\green96\blue96;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\f0\fs18 \cf0 s.boot;\
+\
+(\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf2 SynthDef\cf0 (\cf3 \\bitbang\cf0 , \{\
+	\cf2 var\cf0  snd= \cf2 LFPulse\cf0 .ar(100);\
+	\cf2 Out\cf0 .ar(0, snd*0.5);\
+\}).memStore;\
+)\
+a= \cf2 Synth\cf0 (\cf3 \\bitbang\cf0 )\
+a.free\
+\
+\
+(\
+\cf2 SynthDef\cf0 (\cf3 \\bitbang2\cf0 , \{\
+	\cf2 var\cf0  snd= \cf2 LFPulse\cf0 .ar(100);\
+	\cf2 var\cf0  snd2= \cf2 LFPulse\cf0 .ar(400);\
+	\cf2 Out\cf0 .ar(0, snd+snd2*0.5);\
+\}).memStore;\
+)\
+a= \cf2 Synth\cf0 (\cf3 \\bitbang2\cf0 )\
+a.free\
+\
+\
+(\
+\cf2 SynthDef\cf0 (\cf3 \\bitbang3\cf0 , \{\
+	\cf2 var\cf0  snd= \cf2 LFPulse\cf0 .ar(400);\
+	\cf2 var\cf0  snd2= \cf2 LFPulse\cf0 .ar(400/6);\
+	\cf2 Out\cf0 .ar(0, snd+snd2*0.5);\
+\}).memStore;\
+)\
+a= \cf2 Synth\cf0 (\cf3 \\bitbang3\cf0 )\
+a.free\
+\
+\
+(\
+\cf2 SynthDef\cf0 (\cf3 \\bitbang4\cf0 , \{\
+	\cf2 var\cf0  snd= \cf2 LFPulse\cf0 .ar(\cf2 Mix\cf0 .fill(6, \{\cf2 |i|\cf0  \cf2 KeyState\cf0 .kr(18+i, 0, 2**(i+8), 0)\}));	\cf4 //also try with lag 0.2\cf0 \
+	\cf2 Out\cf0 .ar(0, snd*0.5);\
+\}).memStore;\
+)\
+a= \cf2 Synth\cf0 (\cf3 \\bitbang4\cf0 )\
+a.free\
+\
+\
+\cf4 //install SCPyduino quark\cf0 \
+\cf4 //upload standard firmata from Arduino.app\cf0 \
+\
+
+\fs28 \cf2 SerialPort\cf0 .listDevices\
+f= \cf2 SCPyduino\cf0 (\cf5 "/dev/tty.usbserial-A1001NeZ"\cf0 , 57600);\
+\cf4 //wait 2seconds\cf0 \
+f.firmataVersion	\cf4 //should return 2.1 or something like that\cf0 \
+\
+\
+\cf4 //--test flash led\cf0 \
+(\
+f.digital[13].mode= 1;		\cf4 //set pin13 as digital output\cf0 \
+\cf2 Routine\cf0 (\{\
+	10.do\{\
+		0.1.wait;\
+		f.digital[13].write(1);		\cf4 //pin high\cf0 \
+		0.1.wait;\
+		f.digital[13].write(0);		\cf4 //pin low\cf0 \
+	\};\
+\}).play;\
+)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\fs18 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf4 //--knob0 to control frequency\cf0 \
+(\
+\cf2 SynthDef\cf0 (\cf3 \\bitbang2\cf0 , \{\cf2 |freq= 400|\cf0 \
+	\cf2 var\cf0  snd= \cf2 LFPulse\cf0 .ar(freq);\
+	\cf2 Out\cf0 .ar(0, snd*0.5);\
+\}).memStore;\
+)\
+\
+(\
+\cf2 Routine\cf0 (\{\
+	\cf2 var\cf0  syn= \cf2 Synth\cf0 (\cf3 \\bitbang2\cf0 );\
+	\cf2 inf\cf0 .do\{\
+		f.iterate;\
+		syn.set(\cf3 \\freq\cf0 , f.analog[0].value.linexp(0, 1, 200, 2000));\
+	\};\
+\}).play;\
+)\
+\cf4 //stop with cmd+.\cf0 \
+\
+\
+f.close;\
+}

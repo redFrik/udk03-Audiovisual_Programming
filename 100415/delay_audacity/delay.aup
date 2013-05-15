@@ -1,0 +1,110 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="delay_data" version="1.3.0" audacityversion="1.3.12-beta" sel0="0.0000000000" sel1="0.0000000000" vpos="304" h="0.0000000000" zoom="684.8279901071" rate="44100">
+	<tags>
+		<tag name="id3v2" value="1"/>
+		<tag name="ARTIST" value="redFrik"/>
+		<tag name="YEAR" value="2008"/>
+		<tag name="COMMENTS" value="snowflake"/>
+	</tags>
+	<wavetrack name="Ljudspår 1 1" channel="0" linked="1" mute="0" solo="0" height="75" minimized="0" rate="44100" gain="1" pan="0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000548.au" len="55296" min="-0.153595" max="0.198364" rms="0.02236"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår 1" channel="1" linked="0" mute="0" solo="0" height="75" minimized="0" rate="44100" gain="1" pan="0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e00000c3.au" len="55296" min="-0.14917" max="0.199493" rms="0.02237"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår-2 1 1" channel="0" linked="1" mute="0" solo="0" height="76" minimized="0" rate="44100" gain="0.446684" pan="0.2">
+		<waveclip offset="0.08278912">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e00001bb.au" len="55296" min="-0.167664" max="0.216553" rms="0.035354"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår-2 1" channel="1" linked="0" mute="0" solo="0" height="76" minimized="0" rate="44100" gain="0.446684" pan="0.2">
+		<waveclip offset="0.08278912">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e00001e9.au" len="55296" min="-0.165405" max="0.205048" rms="0.035095"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår-3 1 1" channel="0" linked="1" mute="0" solo="0" height="77" minimized="0" rate="44100" gain="0.354813" pan="-0.4">
+		<waveclip offset="0.16811791">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000633.au" len="55296" min="-0.161041" max="0.216522" rms="0.035307"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår-3 1" channel="1" linked="0" mute="0" solo="0" height="77" minimized="0" rate="44100" gain="0.354813" pan="-0.4">
+		<waveclip offset="0.16811791">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000ad5.au" len="55296" min="-0.165405" max="0.204773" rms="0.035155"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår-4 1 1" channel="0" linked="1" mute="0" solo="0" height="76" minimized="0" rate="44100" gain="0.281838" pan="0.4">
+		<waveclip offset="0.25160998">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000ef5.au" len="55296" min="-0.167664" max="0.216553" rms="0.035354"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår-4 1" channel="1" linked="0" mute="0" solo="0" height="76" minimized="0" rate="44100" gain="0.281838" pan="0.4">
+		<waveclip offset="0.25160998">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000d03.au" len="55296" min="-0.165405" max="0.205048" rms="0.035095"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår-5 1 1" channel="0" linked="1" mute="0" solo="0" height="81" minimized="0" rate="44100" gain="0.223872" pan="-0.6">
+		<waveclip offset="0.31233560">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e00001d1.au" len="55296" min="-0.167664" max="0.216553" rms="0.035354"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Ljudspår-5 1" channel="1" linked="0" mute="0" solo="0" height="81" minimized="0" rate="44100" gain="0.223872" pan="-0.6">
+		<waveclip offset="0.31233560">
+			<sequence maxsamples="524288" sampleformat="131073" numsamples="55296">
+				<waveblock start="0">
+					<simpleblockfile filename="e000048f.au" len="55296" min="-0.165405" max="0.205048" rms="0.035095"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

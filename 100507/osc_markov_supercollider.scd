@@ -103,18 +103,18 @@ Algorithmic composition - Gerhard Nierhaus, pages: 68-69
 book is in room111
 */
 
-http://en.wikipedia.org/wiki/File:MarkovChain1.png
-http://en.wikipedia.org/wiki/Markov_chain
+https://en.wikipedia.org/wiki/File:MarkovChain1.png
+https://en.wikipedia.org/wiki/Markov_chain
 
 //a 2nd order markov chain have a memory of the 2 last states
 //higher order markov chains are also possible but complexity grows fast - hard to know how/if the system is working.
 
 Pfsm - built into supercollider
-http://en.wikipedia.org/wiki/Finite-state_machine
+https://en.wikipedia.org/wiki/Finite-state_machine
 
 //in maxmsp and puredata see the [prob] object helpfile
 
 //Hidden Markov Models (HMM) can be used for analysing systems
-http://en.wikipedia.org/wiki/Hidden_Markov_model
+https://en.wikipedia.org/wiki/Hidden_Markov_model
 
 

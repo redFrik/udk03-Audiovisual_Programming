@@ -130,7 +130,7 @@ etc.
 
 b= 0;
 a= {if(b<0.1, {b= 0.2.rand}, {if(b<0.5, {b= 0.6.rand}, {if(b<0.8, {b= 0.9}, {b= 1.0.rand})})})}.dup(100)
-a.plot	
+a.plot
 a= {if(b<0.1, {b= 0.2.rand}, {if(b<0.5, {b= 0.6.rand}, {if(b<0.8, {b= 0.9}, {b= 1.0.rand})})})}.dup(44100)
 b= Buffer.loadCollection(s, a)
 b.play

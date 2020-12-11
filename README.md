@@ -19,42 +19,42 @@ dates
 - [x] 28may: [`100528`](https://github.com/redFrik/udk03-Audiovisual_Programming/blob/master/100528) More about playing samples with SuperCollider. Advanced examples segmentation, cutups etc.
 - [x] 03jun: [`100603`](https://github.com/redFrik/udk03-Audiovisual_Programming/blob/master/100603) Granular synthesis with SuperCollider. Including GUI control.
 - [x] 04jun: [`100604`](https://github.com/redFrik/udk03-Audiovisual_Programming/blob/master/100604) More about granular synthesis with SuperCollider. Advanced examples.
-- [x] 24jun: [`100624`](http://www.fredrikolofsson.com/f0blog/?q=node/161) (external link) Arduino and 1bit music.
+- [x] 24jun: [`100624`](https://www.fredrikolofsson.com/f0blog/?q=node/161) (external link) Arduino and 1bit music.
 - [x] 25jun: [`100625`](https://github.com/redFrik/udk03-Audiovisual_Programming/blob/master/100625) Connecting Arduino and SuperCollider with firmata and the SCPyduino quark.
 - [x] 08jul: own projects
 - [x] 09jul: own projects
 
 == systems we will use: ==
 --------------------------
-* supercollider: <http://supercollider.sourceforge.net/downloads> (3.3.1 without extras recommended)
-* puredata: <http://puredata.info/downloads> (0.41.4 extended recommended)
-* processing: <http://processing.org/download> (1.1 or newer recommended)
-* arduino: <http://arduino.cc/en/Main/Software> (0018 or newer recommended)
-* audacity: <http://audacity.sourceforge.net/download> (1.3.12 or newer recommended)
-* maxmspjtter: <http://cycling74.com/downloads> (this is a commectial program. note: if you don't have a licence, don't install this until we really need it. there's a 30day trial limit)
+* supercollider: <https://supercollider.github.io> (3.3.1 without extras recommended)
+* puredata: <https://puredata.info/downloads> (0.41.4 extended recommended)
+* processing: <https://processing.org/download/> (1.1 or newer recommended)
+* arduino: <https://www.arduino.cc/en/software> (0018 or newer recommended)
+* audacity: <https://audacityteam.org> (1.3.12 or newer recommended)
+* maxmspjtter: <https://cycling74.com/downloads> (this is a commectial program. note: if you don't have a licence, don't install this until we really need it. there's a 30day trial limit)
 
 == other systems: ==
 --------------------
 * <http://processingjs.org/>
 * <http://openendedgroup.com/field>
-* <http://nodebox.net>
+* <https://nodebox.net>
 * <http://lua-av.mat.ucsb.edu>
-* <http://www.openframeworks.cc/>
+* <https://openframeworks.cc>
 
 == inspirational links: ==
 --------------------------
-* <http://hackaday.com/>
-* <http://createdigitalmusic.com/>
-* <http://createdigitalmotion.com/>
+* <https://hackaday.com/>
+* <https://createdigitalmusic.com/>
+* <https://createdigitalmotion.com/>
 * <http://blog.makezine.com/>
-* <http://www.kobakant.at/DIY/>
-* <http://openprocessing.org/>
-* <http://shiffman.net/>
+* <https://www.kobakant.at/DIY/>
+* <https://openprocessing.org/>
+* <https://shiffman.net/>
 
 == other links: ==
 ------------------
 * <http://narbotic.com/2007/12/super-simple-vactrol-construction.html>
-* <http://www.findsounds.com>
+* <https://www.findsounds.com>
 
 == communication ==
 -------------------

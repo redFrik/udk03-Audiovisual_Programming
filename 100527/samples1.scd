@@ -1,6 +1,6 @@
 //100527
 
-//http://www.findsound.com
+//https://www.findsound.com
 //download some aiff or wav files in format: 16bit, mono, 44100
 //search for snares, kick drums, hihats, cats, cymbals etc
 //make a folder and put the files in /Applications/SuperCollider/sounds/

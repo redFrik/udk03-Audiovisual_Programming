@@ -2,13 +2,13 @@ IP numbers.  each computer/device gets one from the router.  usually something l
 port 0-65535 (recommended to use port numbers >1000, some of the lower ones are reserverd for things like mail, http, ftp etc)
 
 fredrik= 192.168.0.135		600
-rita= 192.168.0.192		700
+rita= 192.168.0.192			700
 chrisi= 192.168.0.102		800
 karin= 192.168.0.133		900
 florian= 192.168.0.136		1000
 marek= 192.168.0.137		1100
 tiago= 192.168.0.193		1200
-joon= 192.168.0.134		1300
+joon= 192.168.0.134			1300
 andre= 192.168.0.184		1400
 timur= 192.168.0.197		1500
 alexa= 192.168.0.130 		1600
